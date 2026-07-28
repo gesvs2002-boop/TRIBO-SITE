@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tribo Fitness Academia | Musculação e Ginástica em Porto Velho - RO</title>
+<meta name="description" content="Tribo Fitness Academia, na região da Aponiã em Porto Velho - RO. Musculação, condicionamento físico e acompanhamento personalizado. Agende sua aula experimental pelo WhatsApp.">
+<meta property="og:title" content="Tribo Fitness Academia — Sua transformação começa aqui">
+<meta property="og:description" content="Musculação, condicionamento físico e acompanhamento próximo na região da Aponiã, Porto Velho - RO.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "Tribo Fitness Academia",
+  "image": "tribo-fitness-logo.jpg",
+  "description": "Academia de ginástica e musculação na região da Aponiã, Porto Velho - RO.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Porto Velho",
+    "addressRegion": "RO",
+    "addressCountry": "BR"
+  },
+  "telephone": "+55-69-00000-0000",
+  "priceRange": "$$"
+}
+</script>
+<style>
+  :root{
+    --void:#0c0c0d;
+    --graphite:#18181a;
+    --graphite-2:#221f1f;
+    --line: rgba(245,241,232,0.09);
+    --ember:#e5342c;
+    --ember-dark:#9c1f1a;
+    --gold:#e8a13c;
+    --gold-light:#ffd98e;
+    --bone:#f5f1e8;
+    --fog:#b9b3a8;
+    --fire: linear-gradient(120deg, var(--ember) 0%, var(--gold) 100%);
+    --radius: 14px;
+    --maxw: 1240px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--void);
+    color:var(--bone);
+    font-family:'Manrope', sans-serif;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+  img{max-width:100%; display:block;}
+  a{color:inherit; text-decoration:none;}
+  h1,h2,h3{font-family:'Oswald', sans-serif; text-transform:uppercase; letter-spacing:0.01em;}
+  .display{font-family:'Anton', sans-serif; text-transform:uppercase; letter-spacing:0.01em;}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 clamp(20px,5vw,64px);}
+  .eyebrow{
+    font-family:'Oswald', sans-serif;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:0.28em;
+    text-transform:uppercase;
+    color:var(--gold);
+    display:flex; align-items:center; gap:12px;
+  }
+  .eyebrow::before{content:''; width:26px; height:2px; background:var(--fire); display:inline-block;}
+  section{position:relative; padding: clamp(70px,10vw,130px) 0;}
+  :focus-visible{outline:2px solid var(--gold); outline-offset:3px;}
+
+  /* torn signature divider - echoes the slashed logo lettering */
+  .tear{
+    position:relative;
+    height:64px;
+    width:100%;
+    overflow:hidden;
+    line-height:0;
+  }
+  .tear svg{width:100%; height:100%; display:block;}
+
+  /* NAV */
+  header{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    padding:18px 0;
+    transition: background .35s ease, padding .35s ease, box-shadow .35s ease;
+  }
+  header.scrolled{
+    background:rgba(12,12,13,0.86);
+    backdrop-filter: blur(10px);
+    padding:10px 0;
+    box-shadow:0 1px 0 var(--line);
+  }
+  nav.wrap{display:flex; align-items:center; justify-content:space-between; gap:24px;}
+  .brand{display:flex; align-items:center; gap:12px; font-family:'Oswald'; font-weight:700; letter-spacing:0.04em;}
+  .brand img{height:44px; width:auto; border-radius:6px;}
+  .brand span{font-size:14px; color:var(--fog); display:block; font-weight:500; letter-spacing:0.1em;}
+  .brand strong{font-size:19px; color:var(--bone); display:block; line-height:1;}
+  .navlinks{display:flex; gap:30px; font-size:14px; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; font-family:'Oswald';}
+  .navlinks a{position:relative; color:var(--fog); transition:color .25s;}
+  .navlinks a:hover{color:var(--bone);}
+  .navlinks a::after{content:''; position:absolute; left:0; bottom:-6px; width:0; height:2px; background:var(--fire); transition:width .3s;}
+  .navlinks a:hover::after{width:100%;}
+  .btn{
+    display:inline-flex; align-items:center; gap:10px;
+    padding:14px 28px;
+    border-radius:100px;
+    font-family:'Oswald'; font-weight:600; font-size:14px; letter-spacing:0.05em; text-transform:uppercase;
+    cursor:pointer; border:none;
+    transition:transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  }
+  .btn-primary{background:var(--fire); color:#160805; box-shadow:0 10px 30px -10px rgba(229,52,44,0.6);}
+  .btn-primary:hover{transform:translateY(-2px); filter:brightness(1.08); box-shadow:0 14px 34px -8px rgba(229,52,44,0.75);}
+  .btn-ghost{background:transparent; border:1.5px solid rgba(245,241,232,0.35); color:var(--bone);}
+  .btn-ghost:hover{border-color:var(--gold); color:var(--gold-light); transform:translateY(-2px);}
+  .navcta{display:flex; align-items:center; gap:14px;}
+  .burger{display:none; flex-direction:column; gap:5px; background:none; border:none; cursor:pointer; padding:8px;}
+  .burger span{width:24px; height:2px; background:var(--bone);}
+
+  /* HERO */
+  #hero{
+    min-height:100vh;
+    display:flex; align-items:center;
+    padding-top:120px;
+    background:
+      radial-gradient(ellipse at 70% 20%, rgba(229,52,44,0.16), transparent 55%),
+      linear-gradient(180deg, rgba(12,12,13,0.55) 0%, rgba(12,12,13,0.94) 78%, var(--void) 100%),
+      url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1800&q=80') center 30%/cover no-repeat;
+    position:relative;
+  }
+  .embers{position:absolute; inset:0; overflow:hidden; pointer-events:none;}
+  .ember-dot{
+    position:absolute; bottom:-10px; border-radius:50%;
+    background:radial-gradient(circle, var(--gold-light), var(--ember) 70%, transparent 100%);
+    opacity:0.85; filter:blur(0.3px);
+    animation: rise linear infinite;
+  }
+  @keyframes rise{
+    0%{ transform:translateY(0) translateX(0); opacity:0; }
+    10%{opacity:0.9;}
+    100%{ transform:translateY(-115vh) translateX(var(--drift,20px)); opacity:0; }
+  }
+  .hero-inner{max-width:760px;}
+  .hero-inner .eyebrow{margin-bottom:22px;}
+  .hero-inner h1{
+    font-size:clamp(2.6rem, 6.4vw, 5rem);
+    line-height:1.02;
+    color:var(--bone);
+    margin-bottom:26px;
+  }
+  .hero-inner h1 em{
+    font-style:normal;
+    background:var(--fire);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+  }
+  .hero-inner p{
+    font-size:clamp(1.02rem,1.6vw,1.2rem);
+    color:var(--fog); max-width:540px; margin-bottom:38px; line-height:1.6;
+  }
+  .hero-btns{display:flex; gap:18px; flex-wrap:wrap; margin-bottom:56px;}
+  .scrollcue{
+    display:flex; align-items:center; gap:12px;
+    color:var(--fog); font-family:'Oswald'; font-size:12px; letter-spacing:0.24em; text-transform:uppercase;
+  }
+  .scrollcue .line{width:1px; height:40px; background:linear-gradient(var(--gold), transparent); position:relative; overflow:hidden;}
+  .scrollcue .line::after{content:''; position:absolute; top:-40px; left:0; width:100%; height:40px; background:var(--gold-light); animation:scrolldrop 1.8s ease-in-out infinite;}
+  @keyframes scrolldrop{ 0%{top:-40px;} 100%{top:40px;} }
+
+  /* BENEFITS */
+  .grid-benefits{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:56px;
+  }
+  .card{
+    background:var(--graphite);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:34px 28px;
+    transition: transform .3s ease, border-color .3s ease, background .3s ease;
+    position:relative; overflow:hidden;
+  }
+  .card:hover{ transform:translateY(-6px); border-color:rgba(232,161,60,0.4); background:var(--graphite-2); }
+  .card .mark{
+    font-family:'Anton'; font-size:13px; letter-spacing:0.08em;
+    color:var(--ember); display:inline-flex; align-items:center; gap:8px; margin-bottom:18px;
+  }
+  .card .icon{
+    width:46px; height:46px; border-radius:10px;
+    background:var(--fire); display:flex; align-items:center; justify-content:center; margin-bottom:20px;
+  }
+  .card .icon svg{width:24px; height:24px; stroke:#160805;}
+  .card h3{font-size:19px; color:var(--bone); margin-bottom:10px; letter-spacing:0.01em;}
+  .card p{color:var(--fog); font-size:15px; line-height:1.6;}
+
+  /* SECTION HEADS */
+  .sec-head{max-width:640px; margin-bottom:20px;}
+  .sec-head h2{font-size:clamp(2rem,4vw,3rem); color:var(--bone); margin:14px 0 18px; line-height:1.05;}
+  .sec-head p{color:var(--fog); font-size:16.5px; line-height:1.65;}
+
+  /* ABOUT */
+  #about .wrap{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;}
+  .about-gallery{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
+  .about-gallery img{border-radius:var(--radius); object-fit:cover; height:100%;}
+  .about-gallery .tall{grid-row:span 2; aspect-ratio:0.72;}
+  .about-gallery .wide{aspect-ratio:1.5;}
+  .stat-row{display:flex; gap:34px; margin-top:34px; flex-wrap:wrap;}
+  .stat{border-left:2px solid var(--ember); padding-left:16px;}
+  .stat b{font-family:'Anton'; font-size:2.1rem; color:var(--gold-light); display:block; line-height:1;}
+  .stat span{color:var(--fog); font-size:13px; letter-spacing:0.04em; text-transform:uppercase; font-family:'Oswald';}
+  .about-copy p{color:var(--fog); line-height:1.75; margin-bottom:16px; font-size:16px;}
+
+  /* SERVICES */
+  .grid-services{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:56px;}
+  .svc{
+    border-radius:var(--radius); overflow:hidden; position:relative; min-height:380px;
+    display:flex; align-items:flex-end; padding:30px;
+    background-size:cover; background-position:center;
+    isolation:isolate;
+  }
+  .svc::before{content:''; position:absolute; inset:0; background:linear-gradient(180deg, rgba(12,12,13,0.05) 20%, rgba(12,12,13,0.94) 92%); z-index:-1;}
+  .svc h3{color:var(--bone); font-size:22px; margin-bottom:8px;}
+  .svc p{color:var(--fog); font-size:14.5px; line-height:1.5;}
+  .svc-note{margin-top:30px; color:var(--fog); font-size:14px; font-style:italic; opacity:0.85;}
+
+  /* GALLERY */
+  .gallery-grid{
+    display:grid; grid-template-columns:repeat(4, 1fr); grid-auto-rows:160px; gap:12px; margin-top:50px;
+  }
+  .gallery-grid .g1{grid-column:span 2; grid-row:span 2;}
+  .gallery-grid .g5{grid-column:span 2;}
+  .gitem{border-radius:10px; overflow:hidden; cursor:pointer; position:relative;}
+  .gitem img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease, filter .5s ease;}
+  .gitem:hover img{transform:scale(1.06); filter:brightness(1.05);}
+  .lightbox{
+    position:fixed; inset:0; background:rgba(8,8,9,0.94); z-index:300;
+    display:none; align-items:center; justify-content:center; padding:40px;
+  }
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:min(90vw,1000px); max-height:82vh; border-radius:10px;}
+  .lightbox button{position:absolute; top:28px; right:32px; background:none; border:1px solid var(--fog); color:var(--bone); width:44px; height:44px; border-radius:50%; font-size:20px; cursor:pointer;}
+
+  /* TESTIMONIALS */
+  #testimonials{background:var(--graphite);}
+  .t-track{position:relative; margin-top:50px; min-height:260px;}
+  .t-slide{
+    display:none; background:var(--void); border:1px solid var(--line); border-radius:var(--radius);
+    padding:40px; max-width:720px; margin:0 auto; text-align:center;
+  }
+  .t-slide.active{display:block; animation:fadein .5s ease;}
+  @keyframes fadein{from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);}}
+  .stars{color:var(--gold); letter-spacing:4px; font-size:18px; margin-bottom:18px;}
+  .t-slide p.quote{font-size:19px; color:var(--bone); line-height:1.6; margin-bottom:24px; font-family:'Oswald'; font-weight:400;}
+  .t-person{display:flex; align-items:center; justify-content:center; gap:14px;}
+  .t-person img{width:52px; height:52px; border-radius:50%; object-fit:cover; border:2px solid var(--gold);}
+  .t-person .name{font-weight:700; color:var(--bone); font-size:14.5px;}
+  .t-person .goal{color:var(--ember); font-size:12.5px; text-transform:uppercase; letter-spacing:0.05em; font-family:'Oswald';}
+  .t-dots{display:flex; justify-content:center; gap:10px; margin-top:30px;}
+  .t-dots button{width:9px; height:9px; border-radius:50%; background:var(--line); border:none; cursor:pointer;}
+  .t-dots button.active{background:var(--fire); width:24px; border-radius:6px;}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--line);}
+  .faq-q{
+    width:100%; text-align:left; background:none; border:none; color:var(--bone);
+    font-family:'Oswald'; font-size:17px; font-weight:600; padding:24px 0; cursor:pointer;
+    display:flex; justify-content:space-between; align-items:center; gap:20px;
+  }
+  .faq-q .plus{font-size:22px; color:var(--gold); transition:transform .3s ease; flex-shrink:0;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0; overflow:hidden; transition:max-height .35s ease;}
+  .faq-a p{color:var(--fog); padding-bottom:22px; line-height:1.65; max-width:680px;}
+
+  /* FINAL CTA */
+  #final-cta{
+    background:
+      radial-gradient(ellipse at 20% 20%, rgba(232,161,60,0.25), transparent 55%),
+      linear-gradient(135deg, var(--ember-dark), #2a0e0c 60%, var(--void));
+    text-align:center;
+  }
+  #final-cta h2{font-size:clamp(2.2rem,5.2vw,4rem); color:var(--bone); margin-bottom:22px;}
+  #final-cta p{color:var(--fog); max-width:520px; margin:0 auto 38px; font-size:17px;}
+
+  /* CONTACT */
+  #contact .wrap{display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:start;}
+  .contact-info{display:flex; flex-direction:column; gap:22px; margin-top:30px;}
+  .cinfo-row{display:flex; gap:16px; align-items:flex-start; padding:18px; background:var(--graphite); border:1px solid var(--line); border-radius:12px;}
+  .cinfo-row .icon{width:38px; height:38px; border-radius:9px; background:var(--fire); flex-shrink:0; display:flex; align-items:center; justify-content:center;}
+  .cinfo-row .icon svg{width:19px; height:19px; stroke:#160805;}
+  .cinfo-row b{display:block; color:var(--bone); font-size:14.5px; margin-bottom:3px;}
+  .cinfo-row span{color:var(--fog); font-size:14px; line-height:1.5;}
+  .map-wrap{border-radius:var(--radius); overflow:hidden; border:1px solid var(--line); min-height:420px;}
+  .map-wrap iframe{width:100%; height:420px; border:0; filter:grayscale(0.4) invert(0.92) contrast(0.9);}
+
+  /* FOOTER */
+  footer{border-top:1px solid var(--line); padding:64px 0 30px;}
+  .foot-grid{display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:40px; padding-bottom:44px;}
+  .foot-brand{display:flex; align-items:center; gap:12px; margin-bottom:16px;}
+  .foot-brand img{height:40px; border-radius:6px;}
+  .foot-brand strong{font-family:'Oswald'; font-size:18px; color:var(--bone);}
+  footer p.desc{color:var(--fog); font-size:14px; max-width:280px; line-height:1.6;}
+  footer h4{font-family:'Oswald'; font-size:13px; letter-spacing:0.12em; color:var(--gold); text-transform:uppercase; margin-bottom:18px;}
+  footer ul{list-style:none; display:flex; flex-direction:column; gap:12px;}
+  footer ul a{color:var(--fog); font-size:14.5px; transition:color .2s;}
+  footer ul a:hover{color:var(--bone);}
+  .foot-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:26px; border-top:1px solid var(--line); flex-wrap:wrap; gap:14px;}
+  .foot-bottom p{color:var(--fog); font-size:13px;}
+  .foot-social{display:flex; gap:14px;}
+  .foot-social a{width:36px; height:36px; border-radius:50%; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; transition:border-color .2s, transform .2s;}
+  .foot-social a:hover{border-color:var(--gold); transform:translateY(-3px);}
+  .foot-social svg{width:16px; height:16px; stroke:var(--bone);}
+
+  /* FLOATING WHATSAPP */
+  .wa-float{
+    position:fixed; right:22px; bottom:22px; z-index:200;
+    width:60px; height:60px; border-radius:50%;
+    background:var(--fire); display:flex; align-items:center; justify-content:center;
+    box-shadow:0 12px 30px -8px rgba(229,52,44,0.7);
+    animation:pulse 2.6s ease-in-out infinite;
+  }
+  .wa-float svg{width:28px; height:28px; fill:#160805;}
+  @keyframes pulse{ 0%,100%{transform:scale(1);} 50%{transform:scale(1.07);} }
+
+  /* fade-in on scroll */
+  .reveal{opacity:0; transform:translateY(22px); transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1; transform:translateY(0);}
+
+  @media (max-width: 980px){
+    .navlinks{display:none;}
+    .burger{display:flex;}
+    #about .wrap, #contact .wrap{grid-template-columns:1fr;}
+    .grid-benefits, .grid-services{grid-template-columns:1fr 1fr;}
+    .gallery-grid{grid-template-columns:repeat(2,1fr);}
+    .gallery-grid .g1{grid-column:span 2;}
+    .foot-grid{grid-template-columns:1fr 1fr;}
+  }
+  @media (max-width:640px){
+    .grid-benefits, .grid-services{grid-template-columns:1fr;}
+    .hero-btns .btn{width:100%; justify-content:center;}
+    .foot-grid{grid-template-columns:1fr;}
+  }
+
+  /* mobile menu */
+  .mobilemenu{
+    position:fixed; inset:0; background:var(--void); z-index:150;
+    display:none; flex-direction:column; align-items:center; justify-content:center; gap:30px;
+  }
+  .mobilemenu.open{display:flex;}
+  .mobilemenu a{font-family:'Oswald'; font-size:22px; text-transform:uppercase; letter-spacing:0.04em; color:var(--bone);}
+  .mobilemenu button.close{position:absolute; top:26px; right:26px; background:none; border:none; color:var(--bone); font-size:28px; cursor:pointer;}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header id="siteHeader">
+  <nav class="wrap">
+    <a href="#hero" class="brand">
+      <img src="tribo-fitness-logo.jpg" alt="Logo Tribo Fitness Academia">
+      <span><strong>Tribo Fitness</strong><span>Academia de Ginástica e Musculação</span></span>
+    </a>
+    <div class="navlinks">
+      <a href="#beneficios">Benefícios</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#estrutura">Estrutura</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato">Contato</a>
+    </div>
+    <div class="navcta">
+      <a class="btn btn-primary" href="https://wa.me/5569000000000?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20Tribo%20Fitness." target="_blank" rel="noopener">Agendar aula</a>
+      <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<div class="mobilemenu" id="mobileMenu">
+  <button class="close" id="closeMenu" aria-label="Fechar menu">✕</button>
+  <a href="#beneficios">Benefícios</a>
+  <a href="#sobre">Sobre</a>
+  <a href="#servicos">Serviços</a>
+  <a href="#estrutura">Estrutura</a>
+  <a href="#depoimentos">Depoimentos</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contato">Contato</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="embers" id="embers"></div>
+  <div class="wrap hero-inner">
+    <div class="eyebrow">Aponiã · Porto Velho - RO</div>
+    <h1>Transforme seu corpo, <em>fortaleça</em> sua saúde e alcance seus objetivos.</h1>
+    <p>A academia da região da Aponiã onde pessoas comuns conquistam resultados reais — com acompanhamento próximo, ambiente acolhedor e profissionais comprometidos com a sua evolução.</p>
+    <div class="hero-btns">
+      <a class="btn btn-primary" href="https://wa.me/5569000000000?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20Tribo%20Fitness." target="_blank" rel="noopener">Agendar aula experimental</a>
+      <a class="btn btn-ghost" href="https://wa.me/5569000000000" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </div>
+    <div class="scrollcue"><div class="line"></div> Role para conhecer a tribo</div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="beneficios">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Por que a tribo</div>
+      <h2>Resultado não é sorte. É estrutura.</h2>
+      <p>Seis pilares sustentam cada treino aqui dentro — do primeiro dia ao resultado que você veio buscar.</p>
+    </div>
+    <div class="grid-benefits">
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 6.8L21 11l-6.6 2.2L12 20l-2.4-6.8L3 11l6.6-2.2z"/></svg></div>
+        <div class="mark">01 · Direção</div>
+        <h3>Acompanhamento profissional</h3>
+        <p>Professores presentes no chão da academia, ajustando sua técnica e seu plano a cada fase.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
+        <div class="mark">02 · Pertencimento</div>
+        <h3>Ambiente acolhedor</h3>
+        <p>Um espaço onde iniciantes são bem-vindos e alunos experientes encontram o próximo desafio.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="10" width="4" height="4"/><rect x="17" y="10" width="4" height="4"/><path d="M7 12h10"/></svg></div>
+        <div class="mark">03 · Estrutura</div>
+        <h3>Equipamentos de qualidade</h3>
+        <p>Aparelhos revisados e organizados, pensados para treinos fluidos, sem filas nem esperas.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/></svg></div>
+        <div class="mark">04 · Consistência</div>
+        <h3>Foco em resultados</h3>
+        <p>Cada treino tem propósito: metas claras, revisadas periodicamente com você.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div class="mark">05 · Território</div>
+        <h3>Localização estratégica</h3>
+        <p>No coração da Aponiã, de fácil acesso para quem vive e trabalha na região.</p>
+      </div>
+      <div class="card reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+        <div class="mark">06 · Presença</div>
+        <h3>Atendimento personalizado</h3>
+        <p>Sua rotina, suas limitações e seus objetivos guiam o que a equipe propõe pra você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tear"><svg preserveAspectRatio="none" viewBox="0 0 1200 60"><polygon points="0,0 1200,0 1200,30 1140,45 1080,20 1000,50 920,15 840,40 760,10 680,45 600,20 520,50 440,12 360,42 280,18 200,48 120,15 40,38 0,20" fill="#18181a"/></svg></div>
+
+<!-- ABOUT -->
+<section id="sobre">
+  <div class="wrap">
+    <div class="about-copy reveal">
+      <div class="eyebrow">A tribo</div>
+      <h2 style="font-size:clamp(2rem,4vw,3rem); color:var(--bone); margin:14px 0 20px;">Uma academia construída por quem também já foi iniciante.</h2>
+      <p>A Tribo Fitness nasceu na região da Aponiã com uma missão simples: tirar do papel os objetivos de treino que a maioria das pessoas guarda só pra si. Aqui, cada aluno é recebido pelo nome — não por um número de matrícula.</p>
+      <p>Nossa missão é acompanhar de perto cada etapa da evolução física de quem treina com a gente, com profissionais qualificados e um espaço pensado para acolher desde o primeiro treino até a conquista mais difícil.</p>
+      <p>Valorizamos disciplina, comunidade e evolução constante — os mesmos princípios que deram nome à tribo.</p>
+      <div class="stat-row">
+        <div class="stat"><b>+8</b><span>Anos de tribo</span></div>
+        <div class="stat"><b>+900</b><span>Alunos ativos</span></div>
+        <div class="stat"><b>100%</b><span>Foco em resultado</span></div>
+      </div>
+    </div>
+    <div class="about-gallery reveal">
+      <img class="tall" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Aluno treinando musculação na Tribo Fitness">
+      <img class="wide" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="Equipe de professores da Tribo Fitness">
+      <img class="wide" src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80" alt="Estrutura interna da academia Tribo Fitness">
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="servicos" style="background:var(--graphite);">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">O que você treina aqui</div>
+      <h2>Serviços pensados pra cada fase da sua evolução.</h2>
+    </div>
+    <div class="grid-services">
+      <div class="svc reveal" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80');">
+        <div><h3>Musculação</h3><p>Treinos de força e hipertrofia com acompanhamento técnico em cada série.</p></div>
+      </div>
+      <div class="svc reveal" style="background-image:url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80');">
+        <div><h3>Condicionamento físico</h3><p>Ganho de resistência e disposição para o seu dia a dia, com treinos dinâmicos.</p></div>
+      </div>
+      <div class="svc reveal" style="background-image:url('https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?auto=format&fit=crop&w=800&q=80');">
+        <div><h3>Acompanhamento personalizado</h3><p>Planejamento individual que evolui junto com o seu progresso, treino a treino.</p></div>
+      </div>
+    </div>
+    <p class="svc-note reveal">Novos serviços e modalidades em breve — a tribo está sempre em evolução.</p>
+  </div>
+</section>
+
+<div class="tear"><svg preserveAspectRatio="none" viewBox="0 0 1200 60"><polygon points="0,60 1200,60 1200,30 1140,45 1080,20 1000,50 920,15 840,40 760,10 680,45 600,20 520,50 440,12 360,42 280,18 200,48 120,15 40,38 0,20" fill="#0c0c0d"/></svg></div>
+
+<!-- GALLERY -->
+<section id="estrutura">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Estrutura</div>
+      <h2>Um espaço feito para treinar sem barreiras.</h2>
+      <p>Ambientes amplos, bem iluminados e equipados — clique nas imagens para ver em detalhe.</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gitem g1"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=80" alt="Área de musculação Tribo Fitness"></div>
+      <div class="gitem"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" alt="Treino funcional na Tribo Fitness"></div>
+      <div class="gitem"><img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=700&q=80" alt="Equipamentos de peso livre"></div>
+      <div class="gitem g5"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=80" alt="Vista geral do salão de musculação"></div>
+      <div class="gitem"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Aluno em treino de força"></div>
+      <div class="gitem"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80" alt="Aula em grupo na academia"></div>
+    </div>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <button id="lightboxClose" aria-label="Fechar imagem">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<!-- TESTIMONIALS -->
+<section id="depoimentos">
+  <div class="wrap">
+    <div class="sec-head reveal" style="margin:0 auto 0; text-align:center; max-width:600px;">
+      <div class="eyebrow" style="justify-content:center;">Quem já é da tribo</div>
+      <h2>Resultados contados por quem viveu.</h2>
+    </div>
+    <div class="t-track">
+      <div class="t-slide active">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Entrei querendo emagrecer e sem nenhuma experiência. Hoje treino com confiança e já perdi 12kg em 6 meses."</p>
+        <div class="t-person">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Foto de aluna da Tribo Fitness">
+          <div><div class="name">Camila R.</div><div class="goal">Objetivo: emagrecimento</div></div>
+        </div>
+      </div>
+      <div class="t-slide">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"O acompanhamento próximo faz toda diferença. Ganhei massa muscular de forma consistente, sem me perder no treino."</p>
+        <div class="t-person">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Foto de aluno da Tribo Fitness">
+          <div><div class="name">Diego M.</div><div class="goal">Objetivo: ganho de massa</div></div>
+        </div>
+      </div>
+      <div class="t-slide">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Depois dos 40, achei que não teria mais disposição. A Tribo me provou o contrário — hoje me sinto mais saudável que há 10 anos."</p>
+        <div class="t-person">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Foto de aluna da Tribo Fitness">
+          <div><div class="name">Selma A.</div><div class="goal">Objetivo: saúde e condicionamento</div></div>
+        </div>
+      </div>
+      <div class="t-dots" id="tDots"></div>
+    </div>
+  </div>
+</section>
+
+<div class="tear"><svg preserveAspectRatio="none" viewBox="0 0 1200 60"><polygon points="0,0 1200,0 1200,30 1140,45 1080,20 1000,50 920,15 840,40 760,10 680,45 600,20 520,50 440,12 360,42 280,18 200,48 120,15 40,38 0,20" fill="#18181a"/></svg></div>
+
+<!-- FAQ -->
+<section id="faq" style="background:var(--graphite);">
+  <div class="wrap" style="max-width:900px;">
+    <div class="sec-head reveal">
+      <div class="eyebrow">Dúvidas</div>
+      <h2>Perguntas frequentes</h2>
+    </div>
+    <div id="faqList">
+      <div class="faq-item">
+        <button class="faq-q">Preciso ter experiência prévia para treinar na Tribo Fitness?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Não. Nossa equipe acompanha iniciantes desde o primeiro treino, com um plano de adaptação individual antes de avançar para cargas e volumes maiores.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Como funciona a aula experimental?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Você agenda pelo WhatsApp, visita a estrutura, conversa com um professor sobre seu objetivo e já experimenta um treino guiado, sem compromisso.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Quais são os horários de funcionamento?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Funcionamos de segunda a sexta das 06h às 22h, e aos sábados das 08h às 14h. Confira a seção de contato para detalhes atualizados.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">A academia oferece acompanhamento nutricional?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Trabalhamos com parcerias locais de nutrição e podemos indicar profissionais próximos para complementar seu plano de treino.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Existe fidelidade no plano?<span class="plus">+</span></button>
+        <div class="faq-a"><p>Temos planos flexíveis, mensais e trimestrais. Fale com nossa equipe pelo WhatsApp para saber qual se encaixa melhor no seu momento.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="final-cta">
+  <div class="wrap">
+    <div class="eyebrow" style="justify-content:center;">Chegou a sua hora</div>
+    <h2>Seu próximo resultado<br>começa hoje.</h2>
+    <p>Marque sua aula experimental gratuita e conheça de perto a estrutura, a equipe e o ambiente que vão te acompanhar na sua evolução.</p>
+    <a class="btn btn-primary" href="https://wa.me/5569000000000?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20Tribo%20Fitness." target="_blank" rel="noopener" style="padding:18px 40px; font-size:15px;">Agendar aula experimental</a>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contato">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Fale com a tribo</div>
+      <h2 style="font-size:clamp(2rem,4vw,3rem); color:var(--bone); margin:14px 0 10px;">Vamos marcar seu primeiro treino?</h2>
+      <p style="color:var(--fog); line-height:1.6;">Estamos na região da Aponiã, em Porto Velho - RO. Chame no WhatsApp ou venha nos visitar.</p>
+      <div class="contact-info">
+        <div class="cinfo-row">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:#160805"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div><b>Endereço</b><span>Região da Aponiã, Porto Velho - RO</span></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:#160805"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+          <div><b>Horários</b><span>Seg. a sex.: 06h–22h · Sáb.: 08h–14h</span></div>
+        </div>
+        <div class="cinfo-row">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="stroke:#160805"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5z"/></svg></div>
+          <div><b>WhatsApp</b><span>(69) 00000-0000</span></div>
+        </div>
+      </div>
+      <div style="display:flex; gap:16px; margin-top:26px; flex-wrap:wrap;">
+        <a class="btn btn-primary" href="https://wa.me/5569000000000" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Apon%C3%A3+Porto+Velho+RO" target="_blank" rel="noopener">Traçar rota</a>
+        <a class="btn btn-ghost" href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe src="https://www.google.com/maps?q=Apon%C3%A3,%20Porto%20Velho%20-%20RO&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mapa Tribo Fitness Academia"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand"><img src="tribo-fitness-logo.jpg" alt="Logo Tribo Fitness"><strong>Tribo Fitness</strong></div>
+        <p class="desc">Academia de ginástica e musculação na região da Aponiã, Porto Velho - RO. Treino, comunidade e evolução real.</p>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#beneficios">Benefícios</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5569000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="#contato">Região da Aponiã, Porto Velho - RO</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#faq">Perguntas frequentes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>© 2026 Tribo Fitness Academia. Todos os direitos reservados.</p>
+      <div class="foot-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="https://wa.me/5569000000000" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M3 5a2 2 0 0 1 2-2h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v3a2 2 0 0 1-2 2A16 16 0 0 1 3 5z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5569000000000?text=Ol%C3%A1!%20Quero%20agendar%20uma%20aula%20experimental%20na%20Tribo%20Fitness." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2zm5.8 14.3c-.2.6-1.4 1.2-1.9 1.2-.5 0-1 .2-3.4-.7a11.6 11.6 0 0 1-4.9-4.3c-1-1.3-1.3-2.4-1.3-2.9 0-.5.6-1.6 1.1-1.9.2-.2.4-.2.6-.2h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.2.4 0 .7.5.9 1.2 1.6 2 2.2.3.2.5.2.7 0l.5-.6c.2-.2.4-.2.6-.1l1.9.9c.2.1.4.2.4.4 0 .2 0 .8-.2 1.4z"/></svg>
+</a>
+
+<script>
+  // header scroll state
+  const header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  });
+
+  // mobile menu
+  const burger = document.getElementById('burgerBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const closeMenu = document.getElementById('closeMenu');
+  burger.addEventListener('click', () => mobileMenu.classList.add('open'));
+  closeMenu.addEventListener('click', () => mobileMenu.classList.remove('open'));
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+  // reveal on scroll
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+
+  // embers particles
+  const embersWrap = document.getElementById('embers');
+  const emberCount = window.innerWidth < 640 ? 14 : 26;
+  for (let i = 0; i < emberCount; i++) {
+    const d = document.createElement('div');
+    d.className = 'ember-dot';
+    const size = 2 + Math.random() * 4;
+    d.style.width = size + 'px';
+    d.style.height = size + 'px';
+    d.style.left = Math.random() * 100 + '%';
+    d.style.setProperty('--drift', (Math.random() * 60 - 30) + 'px');
+    d.style.animationDuration = (6 + Math.random() * 8) + 's';
+    d.style.animationDelay = (Math.random() * 10) + 's';
+    embersWrap.appendChild(d);
+  }
+
+  // lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  document.querySelectorAll('#galleryGrid .gitem img').forEach(img => {
+    img.addEventListener('click', () => {
+      lightboxImg.src = img.src;
+      lightboxImg.alt = img.alt;
+      lightbox.classList.add('open');
+    });
+  });
+  document.getElementById('lightboxClose').addEventListener('click', () => lightbox.classList.remove('open'));
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('open'); });
+
+  // testimonial carousel
+  const slides = document.querySelectorAll('.t-slide');
+  const dotsWrap = document.getElementById('tDots');
+  let current = 0;
+  slides.forEach((s, i) => {
+    const b = document.createElement('button');
+    if (i === 0) b.classList.add('active');
+    b.addEventListener('click', () => goTo(i));
+    dotsWrap.appendChild(b);
+  });
+  function goTo(i) {
+    slides[current].classList.remove('active');
+    dotsWrap.children[current].classList.remove('active');
+    current = i;
+    slides[current].classList.add('active');
+    dotsWrap.children[current].classList.add('active');
+  }
+  setInterval(() => { goTo((current + 1) % slides.length); }, 6000);
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    const q = item.querySelector('.faq-q');
+    const a = item.querySelector('.faq-a');
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(other => {
+        other.classList.remove('open');
+        other.querySelector('.faq-a').style.maxHeight = null;
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        a.style.maxHeight = a.scrollHeight + 'px';
+      }
+    });
+  });
+</script>
+</body>
+</html>
