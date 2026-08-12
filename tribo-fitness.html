@@ -202,7 +202,7 @@
   .sec-head p{color:var(--fog); font-size:16.5px; line-height:1.65;}
 
   /* ABOUT */
-  #about .wrap{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;}
+  #sobre .wrap{display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:center;}
   .about-gallery{display:grid; grid-template-columns:1fr 1fr; gap:14px;}
   .about-gallery img{border-radius:var(--radius); object-fit:cover; height:100%;}
   .about-gallery .tall{grid-row:span 2; aspect-ratio:0.72;}
@@ -244,7 +244,7 @@
   .lightbox button{position:absolute; top:28px; right:32px; background:none; border:1px solid var(--fog); color:var(--bone); width:44px; height:44px; border-radius:50%; font-size:20px; cursor:pointer;}
 
   /* TESTIMONIALS */
-  #testimonials{background:var(--graphite);}
+  #depoimentos{background:var(--graphite);}
   .t-track{position:relative; margin-top:50px; min-height:260px;}
   .t-slide{
     display:none; background:var(--void); border:1px solid var(--line); border-radius:var(--radius);
@@ -285,7 +285,7 @@
   #final-cta p{color:var(--fog); max-width:520px; margin:0 auto 38px; font-size:17px;}
 
   /* CONTACT */
-  #contact .wrap{display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:start;}
+  #contato .wrap{display:grid; grid-template-columns:1.05fr 0.95fr; gap:50px; align-items:start;}
   .contact-info{display:flex; flex-direction:column; gap:22px; margin-top:30px;}
   .cinfo-row{display:flex; gap:16px; align-items:flex-start; padding:18px; background:var(--graphite); border:1px solid var(--line); border-radius:12px;}
   .cinfo-row .icon{width:38px; height:38px; border-radius:9px; background:var(--fire); flex-shrink:0; display:flex; align-items:center; justify-content:center;}
@@ -331,7 +331,7 @@
   @media (max-width: 980px){
     .navlinks{display:none;}
     .burger{display:flex;}
-    #about .wrap, #contact .wrap{grid-template-columns:1fr;}
+    #sobre .wrap, #contato .wrap{grid-template-columns:1fr;}
     .grid-benefits, .grid-services{grid-template-columns:1fr 1fr;}
     .gallery-grid{grid-template-columns:repeat(2,1fr);}
     .gallery-grid .g1{grid-column:span 2;}
@@ -473,9 +473,9 @@
       </div>
     </div>
     <div class="about-gallery reveal">
-      <img class="tall" src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Aluno treinando musculação na Tribo Fitness">
-      <img class="wide" src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=800&q=80" alt="Equipe de professores da Tribo Fitness">
-      <img class="wide" src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=800&q=80" alt="Estrutura interna da academia Tribo Fitness">
+      <img class="tall" src="images/equipe-fachada.webp" alt="Equipe da Tribo Fitness na entrada da academia" loading="lazy">
+      <img class="wide" src="images/acompanhamento-halteres.webp" alt="Professora acompanhando aluna durante exercício com halteres" loading="lazy">
+      <img class="wide" src="images/treino-estrutura.webp" alt="Treino orientado na estrutura da Tribo Fitness" loading="lazy">
     </div>
   </div>
 </section>
@@ -488,14 +488,14 @@
       <h2>Serviços pensados pra cada fase da sua evolução.</h2>
     </div>
     <div class="grid-services">
-      <div class="svc reveal" style="background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80');">
-        <div><h3>Musculação</h3><p>Treinos de força e hipertrofia com acompanhamento técnico em cada série.</p></div>
+      <div class="svc reveal" style="background-image:url('images/musculacao-acompanhada.webp'); background-position:center 38%;">
+        <div><h3>Musculação</h3><p>Treinos de força com orientação próxima para executar cada movimento com mais segurança.</p></div>
       </div>
-      <div class="svc reveal" style="background-image:url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=800&q=80');">
-        <div><h3>Condicionamento físico</h3><p>Ganho de resistência e disposição para o seu dia a dia, com treinos dinâmicos.</p></div>
+      <div class="svc reveal" style="background-image:url('images/mobilidade.webp'); background-position:center 60%;">
+        <div><h3>Condicionamento físico</h3><p>Mobilidade, resistência e disposição para o dia a dia, respeitando o seu ritmo.</p></div>
       </div>
-      <div class="svc reveal" style="background-image:url('https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?auto=format&fit=crop&w=800&q=80');">
-        <div><h3>Acompanhamento personalizado</h3><p>Planejamento individual que evolui junto com o seu progresso, treino a treino.</p></div>
+      <div class="svc reveal" style="background-image:url('images/orientacao-equipamento.webp'); background-position:center 42%;">
+        <div><h3>Acompanhamento personalizado</h3><p>A equipe acompanha a execução e adapta o treino à sua evolução, treino a treino.</p></div>
       </div>
     </div>
     <p class="svc-note reveal">Novos serviços e modalidades em breve — a tribo está sempre em evolução.</p>
@@ -513,12 +513,12 @@
       <p>Ambientes amplos, bem iluminados e equipados — clique nas imagens para ver em detalhe.</p>
     </div>
     <div class="gallery-grid" id="galleryGrid">
-      <div class="gitem g1"><img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=1000&q=80" alt="Área de musculação Tribo Fitness"></div>
-      <div class="gitem"><img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" alt="Treino funcional na Tribo Fitness"></div>
-      <div class="gitem"><img src="https://images.unsplash.com/photo-1546483875-ad9014c88eba?auto=format&fit=crop&w=700&q=80" alt="Equipamentos de peso livre"></div>
-      <div class="gitem g5"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=900&q=80" alt="Vista geral do salão de musculação"></div>
-      <div class="gitem"><img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="Aluno em treino de força"></div>
-      <div class="gitem"><img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?auto=format&fit=crop&w=700&q=80" alt="Aula em grupo na academia"></div>
+      <div class="gitem g1"><img src="images/treino-estrutura.webp" alt="Espaço de treino e acompanhamento da Tribo Fitness" loading="lazy"></div>
+      <div class="gitem"><img src="images/exercicio-cabo.webp" alt="Aluna treinando no equipamento de cabos" loading="lazy"></div>
+      <div class="gitem"><img src="images/treino-no-solo.webp" alt="Treino com pesos livres na Tribo Fitness" loading="lazy"></div>
+      <div class="gitem g5"><img src="images/remada-acompanhada.webp" alt="Professora orientando exercício no aparelho" loading="lazy"></div>
+      <div class="gitem"><img src="images/desenvolvimento-halteres.webp" alt="Treino de força com halteres e orientação" loading="lazy"></div>
+      <div class="gitem"><img src="images/equipe-fachada.webp" alt="Equipe da Tribo Fitness na entrada da academia" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -528,36 +528,34 @@
   <img id="lightboxImg" src="" alt="">
 </div>
 
-<!-- TESTIMONIALS -->
+<!-- REAL EXPERIENCE -->
 <section id="depoimentos">
   <div class="wrap">
-    <div class="sec-head reveal" style="margin:0 auto 0; text-align:center; max-width:600px;">
-      <div class="eyebrow" style="justify-content:center;">Quem já é da tribo</div>
-      <h2>Resultados contados por quem viveu.</h2>
+    <div class="sec-head reveal" style="margin:0 auto 0; text-align:center; max-width:680px;">
+      <div class="eyebrow" style="justify-content:center;">Acompanhamento de verdade</div>
+      <h2>Você não treina sozinha.</h2>
+      <p>Na Tribo, orientação e acolhimento fazem parte do treino. A equipe acompanha seus movimentos, respeita o seu ritmo e ajuda você a evoluir com mais segurança.</p>
     </div>
     <div class="t-track">
       <div class="t-slide active">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Entrei querendo emagrecer e sem nenhuma experiência. Hoje treino com confiança e já perdi 12kg em 6 meses."</p>
+        <p class="quote">Atenção à execução para você treinar com mais confiança.</p>
         <div class="t-person">
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80" alt="Foto de aluna da Tribo Fitness">
-          <div><div class="name">Camila R.</div><div class="goal">Objetivo: emagrecimento</div></div>
+          <img src="images/professora-tribo.webp" alt="Professora da Tribo Fitness" loading="lazy">
+          <div><div class="name">Equipe Tribo Fitness</div><div class="goal">Orientação durante o treino</div></div>
         </div>
       </div>
       <div class="t-slide">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"O acompanhamento próximo faz toda diferença. Ganhei massa muscular de forma consistente, sem me perder no treino."</p>
+        <p class="quote">Treinos adaptados ao seu momento, às suas limitações e aos seus objetivos.</p>
         <div class="t-person">
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Foto de aluno da Tribo Fitness">
-          <div><div class="name">Diego M.</div><div class="goal">Objetivo: ganho de massa</div></div>
+          <img src="images/professora-acompanhamento.webp" alt="Professora da Tribo Fitness" loading="lazy">
+          <div><div class="name">Evolução no seu ritmo</div><div class="goal">Atendimento próximo</div></div>
         </div>
       </div>
       <div class="t-slide">
-        <div class="stars">★★★★★</div>
-        <p class="quote">"Depois dos 40, achei que não teria mais disposição. A Tribo me provou o contrário — hoje me sinto mais saudável que há 10 anos."</p>
+        <p class="quote">Um ambiente onde você é recebida pelo nome e se sente parte da Tribo.</p>
         <div class="t-person">
-          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80" alt="Foto de aluna da Tribo Fitness">
-          <div><div class="name">Selma A.</div><div class="goal">Objetivo: saúde e condicionamento</div></div>
+          <img src="images/equipe-tribo.webp" alt="Professora da Tribo Fitness" loading="lazy">
+          <div><div class="name">Treino com acolhimento</div><div class="goal">Comunidade Tribo</div></div>
         </div>
       </div>
       <div class="t-dots" id="tDots"></div>
